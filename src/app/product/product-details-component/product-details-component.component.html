@@ -1,0 +1,30 @@
+<main id="main" class="main">
+  <div class="pagetitle">
+    <h1>Details Products</h1>
+  </div>
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{{formData.images}}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{formData.name}}</h5>
+                      <p class="card-text">{{formData.description}}</p>
+                      <p class="card-text"><small>Category: {{formData.category}}</small></p>
+                      <p class="card-text"><small class="btn btn-success">Rp. {{formData.price}}</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

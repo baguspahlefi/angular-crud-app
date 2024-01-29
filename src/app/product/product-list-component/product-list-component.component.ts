@@ -12,9 +12,17 @@ export class ProductListComponentComponent implements OnInit {
   constructor(private productServices: ProductServiceService){}
 
   ngOnInit(): void {
-      this.productServices.getProducts().subscribe((data)=>{
+      this.productServices.getAllProducts().subscribe((data)=>{
         this.allProducts = data;
         console.log(this.allProducts);
       })
+  }
+
+  deleteProducts(id:number){
+    this.productServices.deleteProduct(id).subscribe({
+      next: (data)=>{
+        this.allProducts = this.allProducts.filter(_=>_.id != id)
+      }
+  })
   }
 }

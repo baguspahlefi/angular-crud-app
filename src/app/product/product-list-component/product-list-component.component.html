@@ -7,17 +7,49 @@
   </div>
   <section class="section">
     <div class="row">
-      <div *ngFor="let item of allProducts"  class="col-md-4">
-        <div class="card" style="width: 18rem">
-          <img src="{{item.images}}" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <p class="card-text">
-                {{ item.description }}
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+      <div class="col-md-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Price</th>
+              <th scope="col">Category</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of allProducts">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.price }}</td>
+              <td>{{ item.category }}</td>
+              <td>
+                <a
+                  href=""
+                  class="btn btn-primary"
+                  [routerLink]="['/products/detail', item.id]"
+                  ><i class="bi bi-search"></i
+                ></a>
+                <a
+                  href=""
+                  class="btn btn-warning"
+                  [routerLink]="['/products/edit', item.id]"
+                  ><i class="bi bi-pencil"></i
+                ></a>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  (click)="deleteProducts(item.id)"
+                >
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
