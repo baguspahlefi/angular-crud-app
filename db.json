@@ -12,35 +12,40 @@
       "name": "laptop",
       "description": "A brand laptop",
       "price": 1000,
-      "category": "computers"
+      "category": "computers",
+      "images": "assets/images/laptop.png"
     },
     {
       "id": 2,
       "name": "desktop",
       "description": "B brand desktop",
       "price": 550,
-      "category": "computers"
+      "category": "computers",
+      "images": "assets/images/avanza.png"
     },
     {
       "id": 3,
       "name": "wireless keyboard",
       "description": "HP brand keyboard",
       "price": 110,
-      "category": "accessories"
+      "category": "accessories",
+      "images": "assets/images/avanza.png"
     },
     {
       "id": 4,
       "name": "LCD monitor",
       "description": "D brand monitor",
       "price": 150,
-      "category": "accessories"
+      "category": "accessories",
+      "images": "assets/images/avanza.png"
     },
     {
       "id": 5,
       "name": "wireless modem",
       "description": "F brand wireless modem",
       "price": 350,
-      "category": "accessories"
+      "category": "accessories",
+      "images": "assets/images/avanza.png"
     }
   ]
 }
