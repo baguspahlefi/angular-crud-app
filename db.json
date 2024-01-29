@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "bagus",
+      "password": "password"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "laptop",
+      "description": "A brand laptop",
+      "price": 1000,
+      "category": "computers"
+    },
+    {
+      "id": 2,
+      "name": "desktop",
+      "description": "B brand desktop",
+      "price": 550,
+      "category": "computers"
+    },
+    {
+      "id": 3,
+      "name": "wireless keyboard",
+      "description": "HP brand keyboard",
+      "price": 110,
+      "category": "accessories"
+    },
+    {
+      "id": 4,
+      "name": "LCD monitor",
+      "description": "D brand monitor",
+      "price": 150,
+      "category": "accessories"
+    },
+    {
+      "id": 5,
+      "name": "wireless modem",
+      "description": "F brand wireless modem",
+      "price": 350,
+      "category": "accessories"
+    }
+  ]
+}
