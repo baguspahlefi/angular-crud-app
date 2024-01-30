@@ -5,6 +5,15 @@
   <div class="d-flex my-2">
     <a class="btn btn-success" routerLink="/create">Add products</a>
   </div>
+  <mat-form-field>
+    <mat-label>Category</mat-label>
+    <mat-select (selectionChange)="getProductsByCategory($event)">
+      <mat-option value="all">All</mat-option>
+      <mat-option value="accessories">Accessories</mat-option>
+      <mat-option value="computers">Computers</mat-option>
+    </mat-select>
+  </mat-form-field>
+
   <section class="section">
     <div class="row">
       <div class="col-md-12">

@@ -15,6 +15,12 @@ import { ProductEditComponentComponent } from './product/product-edit-component/
 import { HeaderComponent } from './product/header/header.component';
 import { SidebarComponent } from './product/sidebar/sidebar.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
+import {MatSelectModule} from '@angular/material/select';
+
+
 
 
 @NgModule({
@@ -36,8 +42,10 @@ import { SidebarComponent } from './product/sidebar/sidebar.component';
     FormsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    MatSelectModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule
 
   
   ],

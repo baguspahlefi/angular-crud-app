@@ -30,6 +30,14 @@
       "price": 110,
       "category": "computers",
       "images": "assets/images/avanza.png"
+    },
+    {
+      "id": 4,
+      "name": "Gelang",
+      "description": "Gelang bagus",
+      "price": 20000,
+      "category": "accessories",
+      "images": ""
     }
   ]
 }

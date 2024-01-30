@@ -14,6 +14,10 @@ export class ProductServiceService {
     return this.httpClient.get<Product[]>('http://localhost:3000/products');
   }
 
+  getProductsByCategory(category: string) {
+    return this.httpClient.get<Product[]>(`http://localhost:3000/products?category=${category}`);
+  }
+
   postProducts(data: Product): Observable<Product> {
     return this.httpClient.post<Product>(`http://localhost:3000/products`, data);
   }
