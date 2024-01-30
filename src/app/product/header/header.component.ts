@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  toggle(){
+    const element = document.body as HTMLBodyElement
+    element.classList.toggle('toggle-sidebar');
+  }
 }

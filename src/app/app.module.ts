@@ -8,20 +8,24 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductListComponentComponent } from './product/product-list-component/product-list-component.component';
-import { HeaderComponent } from './layouts/header/header.component';
 import { LoginComponent } from './login/login.component';
 import { ProductFormComponentComponent } from './product/product-form-component/product-form-component.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductEditComponentComponent } from './product/product-edit-component/product-edit-component.component';
+import { HeaderComponent } from './product/header/header.component';
+import { SidebarComponent } from './product/sidebar/sidebar.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     LoginComponent,
     ProductFormComponentComponent,
-    ProductListComponentComponent
+    ProductListComponentComponent,
+    ProductEditComponentComponent,
+    HeaderComponent,
+    SidebarComponent
 
   ],
   imports: [
@@ -30,7 +34,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+
+
   
   ],
   providers: [],

@@ -22,6 +22,11 @@ export class ProductServiceService {
     return this.httpClient.get<Product>(`http://localhost:3000/products/${id}`);
   }
 
+  putProduct(data: Product){
+    return this.httpClient.put<Product>(`http://localhost:3000/products/${data.id}`,data);
+  }
+  
+
   deleteProduct(id: number){
     return this.httpClient.delete<Product>(`http://localhost:3000/products/${id}`);
   }
